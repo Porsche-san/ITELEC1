@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        Body {
+            font-family: Arial, sans-serif;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #171717;
+        }
+        nav h2{
+            margin-top: 4px;
+            display: flex;
+            float: right;
+            color: aliceblue;
+            font-family: Bison;
+        }
+        nav ul img{
+            float: right;
+            width: 50px;
+            margin-top: auto;
+        }
+        nav li {
+            float: left;
+        }
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav li a:hover {
+            background-color: #dcdcdc;
+            color: #171717  ;
+        }
+        div {
+            align-self: center;
+            height: auto;
+            border: 5px solid;
+            margin:20%;
+            border-radius: 10px;
+        }
+        div input {
+            margin: auto;
+        }
+        footer{
+            border-top: 5px solid;
+            margin-top: 5%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class = "header">
+        
+        <ul>
+            <img src ="Support-PNG-Images.png"></img>
+            <h2>PorscheSan's TechSupport</h2>
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="news.asp">My Tickets</a></li>
+            <li><a href="contact.asp">Help</a></li>
+            <li><a href="about.asp">About</a></li>
+          </ul>
+
+    </nav>
+    <div class="Ticket">
+        <label for="nameInput" class="form-label" placeholder="form-label">NAME: </label>
+        <input type="text" class="form-control" id="nameInput" placeholder="Enter Your Name: ">
+        <input type="text" class="form-control" id="Problem" placeholder="Issue: ">
+    </div>
+    <footer>
+        <h2>Rip Bozo</h2>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

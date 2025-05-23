@@ -1,156 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-.modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
-  padding-top: 60px;
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto;
-  border: 1px solid #888;
-  width: 80%; 
-}
-
-
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        Body {
+            font-family: Arial, sans-serif;
+            background: url(background.jpg);
+            background-size: 100% 150%;
+            background-repeat: no-repeat;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #171717;
+        }
+        nav h2{
+            margin-top: 4px;
+            display: flex;
+            float: right;
+            color: aliceblue;
+            font-family: Bison;
+        }
+        nav h2 a{
+            text-decoration: none;
+            color:aliceblue;
+        }
+        nav ul img{
+            float: right;
+            width: 50px;
+            margin-top: auto;
+        }
+        nav li {
+            float: left;
+        }
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav li a:hover {
+            background-color: #dcdcdc;
+            color: #171717  ;
+        }
+        div {
+            align-self: center;
+            height: auto;
+            border: 5px solid;
+            margin:20%;
+            border-radius: 10px;
+            background-color: #fcfcfc;
+        }
+        div input {
+            margin: auto;
+        }
+        .Access{
+          flex: right;
+        }
+        .btn{
+            background-color: #171717;
+            color: #fcfcfc;
+            margin-left: 80%;
+            margin-top: auto;
+        }
+        .btn a{
+          text-decoration: none;
+          color: #fcfcfc;
+        }
+        .btn a:hover{
+          color: #171717;
+        }
+        label .checkbox{
+          margin-bottom:50%;
+        }
+        footer{
+            border-top: 5px solid;
+            margin-top: 5%;
+            background-color: #171717;
+            color: #fcfcfc;
+            display: flex;
+        }
 
 
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-</style>
+    </style>
 </head>
 <body>
-
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
-
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+    <nav class = "header">
         
-      <button><a link href="file:///C:/Users/LAB2/Downloads/Ticket.html">Login</a></button>
-      <label>
+        <ul>
+            <img src ="Support-PNG-Images.png"></img>
+            <h2><a link href="file:///C:/Users/LAB2/Downloads/Admin%20(1).html#">PorscheSan's TechSupport</a></h2>
+          </ul>
+
+    </nav>
+    <div class="Log In">
+        <label for="nameInput" class="form-label" placeholder="form-label">Username: </label>
+        <input type="text" class="form-control" id="nameInput" placeholder="Enter Your Username">
+        <label for="nameInput" class="form-label" placeholder="form-label">Password: </label>
+        <input type="password" class="form-control" id="Problem" placeholder="Password" maxlength="75" width="300">
+        <a href="#">Forgot password?</a>
+        <nav class="Access">
+        <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
+      
+      <button type="button" class="btn"><a link href="file:///C:/Users/LAB2/Downloads/Ticket.html">Log In</a></button>
+      
+    </nav>
     </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
-
-
-
+    <footer>
+        <h2>Intellectual Property Right's of Porsche-san</h2>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
